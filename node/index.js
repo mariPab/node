@@ -1,6 +1,5 @@
 const os = require('os');
 const fs = require('fs');
-// console.log(os);
 
 /* console.log('Platform: ', os.platform());
 console.log('Arch: ', os.arch());
@@ -47,13 +46,6 @@ const surname = [
 ];
 
 const gender = genderArray[Math.floor(Math.random() * genderArray.length)];
-
-const data = {
-    gender: gender,
-    name: gender === 'F'? femaleFirstName[Math.floor(Math.random() * femaleFirstName.length)] : maleFirstName[Math.floor(Math.random() * maleFirstName.length)],
-    surname: surname[Math.floor(Math.random() * surname.length)],
-    age: Math.floor(Math.random() * (78 - 18 + 1)) + 18,
-};
 
 const people = [];
 for (let i = 0; i < 20; i++) {
